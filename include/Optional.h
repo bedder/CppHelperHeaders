@@ -9,6 +9,7 @@
 
 #include <memory>
 
+namespace helper {
 namespace optional {
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -151,3 +152,4 @@ NonCopyable<T> make_noncopyable(Args... args) {
 }
 
 }  // namespace optional
+}  // namespace helper

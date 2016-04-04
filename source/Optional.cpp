@@ -27,8 +27,7 @@
 #include <iostream>        // Required for std::cout, std::cerr
 #include <string>          // Required for std::string
 #include "Optional.h"      // Required for optional::Copyable, optional::NonCopyable
-using namespace optional;  // This is bad practice, but fine this time.
-
+using namespace helper::optional;  // This is bad practice, but fine this time.
 
 struct Copy { // A struct with a working copy CTOR
   Copy()            { std::cout << "called default CTOR\n"; }
@@ -42,7 +41,7 @@ struct NonCopy {  // A struct with a throwing copy CTOR
 
 // A little helper function: just checks if an optional::Optional<T> object is
 // currently managing a T resource.
-template <typename T> std::string valid(const optional::Optional<T>& opt) {
+template <typename T> std::string valid(const Optional<T>& opt) {
   return opt ? "valid" : "invalid";
 }
 
