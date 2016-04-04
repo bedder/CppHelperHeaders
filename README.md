@@ -15,7 +15,16 @@ As of the time of updating this README.md file, here are the classes I've includ
 
 Both `Optional` and `ThreadPool` are header-only, and are self contained, so you can just drop them into a project and immediately start using them. But if you're using them for any extended period of time, it might be worth seperating the implementations into `.cpp` files.
 
-As well as the header-only class definitions, I've also tried to include examples of how they can be used in the [`source` directory](https://github.com/bedder/CppHelperHeaders/tree/master/source).
+As well as the header-only class definitions, I've also tried to include examples of how they can be used in the [`examples` directory](https://github.com/bedder/CppHelperHeaders/tree/master/examples).
+
+The examples can be compiled using [`CMake`](https://cmake.org/) using the following commands<sup id="a1">[1](#f1)</sup>:
+
+```
+	cmake -H. -Bbuild
+	cmake --build build
+```
+
+<sup id="f1">1</sup>: At least on my machine - I'm no CMake expert. [↩](#a1)
 
 ### Am I allowed to use these?
 
