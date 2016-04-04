@@ -8,5 +8,5 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
-add_executable(Optional ${PROJECT_SOURCE_DIR}/source/Optional.cpp)
-add_executable(ThreadPool ${PROJECT_SOURCE_DIR}/source/ThreadPool.cpp)
+add_executable(Optional ${PROJECT_SOURCE_DIR}/examples/Optional.cpp)
+add_executable(ThreadPool ${PROJECT_SOURCE_DIR}/examples/ThreadPool.cpp)
